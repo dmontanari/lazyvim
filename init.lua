@@ -1,7 +1,11 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=4")
-vim.cmd("set softtabstop=4")
-vim.cmd("set shiftwidth=4")
+-- Configura a largura do tab para 4 espaços
+vim.o.tabstop = 4
+
+-- Configura a largura da indentação para 4 espaços
+vim.o.shiftwidth = 4
+
+-- Faz com que o pressionar de Tab insira espaços em vez de tabs
+vim.o.expandtab = true
 
 -- Comandos personalizados para habilitar/desabilitar o IntelliSense
 vim.api.nvim_create_user_command("IntelliOff", function()
